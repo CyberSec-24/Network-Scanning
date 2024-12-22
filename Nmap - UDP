@@ -1,0 +1,8 @@
+Attackers send UDP packets to the target host, and a UDP response means that the target host is active. 
+If the target host is offline or unreachable, various error messages such as host/network unreachable or TTL exceeded could be returned.
+
+In Zenmap, the -PU option is used to perform the UDP ping scan
+ The default port number used by Nmap for the UDP ping scan is 40,125. This highly uncommon port is used as the default for sending UDP packets to the target
+
+Syntax:- nmap -PU <ip address>
+Command:- nmap -PU 192.168.187.208 
