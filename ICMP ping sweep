@@ -1,0 +1,10 @@
+The ICMP ping scan to send ICMP packets to the destination system to gather all necessary information about it. 
+CMP ECHO ping scan involves sending ICMP ECHO requests to a host. If the host is alive, it will return an ICMP ECHO reply.
+
+This scan is useful for locating active devices or determining if ICMP is passing through a firewall
+This technique does not work on Windows-based networks, as their TCP/IP stack implementation does not reply to ICMP probes directed at the broadcast address.
+
+In Zenmap, the -PE option is used to perform the ICMP ECHO ping scan. Active hosts are displayed as “Host is up,” as shown in the screenshot
+
+Syntax:- nmap -PE <ip address>
+Command:- nmap -sn -PE 192.168.187.208-220
