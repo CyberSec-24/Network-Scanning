@@ -1,0 +1,9 @@
+ICMP timestamp ping is an optional and additional type of ICMP ping whereby the attackers query a timestamp message to acquire the information related to the current time from the target host machine
+
+This ICMP timestamp pinging is generally used for time synchronization. Such a ping method is effective in identifying whether the destination host machine is active
+the condition where the administrator blocks the traditional ICMP ECHO ping requests
+
+In Zenmap, the -PP option is used to perform an ICMP timestamp ping scan
+
+syntax:- nmap -PR <ip address>
+command:- nmap -PP 192.168.187.208
