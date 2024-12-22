@@ -1,0 +1,11 @@
+In this type of host discovery technique, an attacker uses the Nmap tool to initiate the three-way handshake by sending the empty TCP SYN flag to the target host. 
+
+After receiving SYN, the target host acknowledges the receipt with an ACK flag. 
+After reception of the ACK flag, the attacker confirms that the target host is active and terminates the connection by sending an RST flag to the target host machine 
+
+ Port 80 is used as the default destination port. A range of ports can also be specified in this type of pinging format without inserting a space between -PS and the port number 
+
+In Zenmap, the -PS option is used to perform a TCP SYN ping scan.
+
+Syntax:- Nmap -PN <ip address>
+Cpmmand:- nmap -sn -PM 192.168.187.208
