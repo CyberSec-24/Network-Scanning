@@ -1,0 +1,7 @@
+
+Nmap:- https://nmap.org/
+
+Nmao is a pre-installed tool in kali linux. nmap is very useful tool  
+nmap port scanning
+syntax:- nmap -p <ort> -v <ip address>
+command>- nmap -p 1-650 -T4 -A -v 10.10.1.11
