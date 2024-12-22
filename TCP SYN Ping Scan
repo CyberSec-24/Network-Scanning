@@ -7,5 +7,5 @@ After reception of the ACK flag, the attacker confirms that the target host is a
 
 In Zenmap, the -PS option is used to perform a TCP SYN ping scan.
 
-Syntax:- Nmap -PN <ip address>
-Cpmmand:- nmap -sn -PM 192.168.187.208
+Syntax:- Nmap -PS <ip address>
+Cpmmand:- nmap -sn -PS 192.168.187.208
