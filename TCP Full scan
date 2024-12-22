@@ -1,0 +1,12 @@
+In TCP Connect scanning, the OS’s TCP connect() system call tries to open a connection to every port of interest on the target machine
+ If the port is listening, the connect() call will result in a successful connection with the host on that particular port; otherwise,
+it will return an error message stating that the port is not reachable
+
+In the TCP three-way handshake, the client sends a SYN packet, which the recipient acknowledges with a SYN+ACK packet. 
+Then, the client acknowledges the SYN+ACK packet with an ACK packet to complete the connection
+
+Making a separate connect() call for every targeted port in a linear manner would take a long time over a slow connection.
+In Zenmap, the -sT option is used to perform TCP Connect/full open scan.
+
+syntax:- nmap -sT -v <ip address>
+command:- nmap -sT -v 192.128.187.208
