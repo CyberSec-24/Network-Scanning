@@ -1,0 +1,8 @@
+IP protocol ping is the latest host discovery option that sends IP ping packets with the IP header of any specified protocol number.
+It has the same format as the TCP and UDP ping
+ This technique tries to send different packets using different IP protocols, hoping to get a response indicating that a host is online.
+
+In a nutshell, attackers send different probe packets of different IP protocols to the target host; any response from any probe indicates that a host is online
+
+Syntax:- nmap -PO <ip address>
+Command:- nmap -PO 192.168.187.208
