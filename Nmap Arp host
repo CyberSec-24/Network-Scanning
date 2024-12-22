@@ -1,0 +1,8 @@
+Attackers use the Nmap tool to perform ARP ping scan for discovering live hosts in the network. 
+In Zenmap, the -PR option is used to perform ARP ping scan.
+
+-sn is the Nmap command to disable the port scan.
+Since Nmap uses ARP ping scan as the default ping scan, to disable it and perform other desired ping scans.
+
+syntax:- nmap -PT <ip address>
+command:- nmap -sn -PR 192.168.187.208
