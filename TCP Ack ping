@@ -1,0 +1,11 @@
+TCP ACK ping also uses the default port 80. 
+In the TCP ACK ping technique, the attackers send an empty TCP ACK packet to the target host directly
+
+the target host responds with an RST flag to terminate the request. 
+The reception of this RST packet at the attacker’s end indicates that the host is active.
+
+n Zenmap, the -PA option is used to perform a TCP ACK ping scan.
+
+Syntax:- nmap -PA <ip address>
+Command:- nmap -PA 192.168.187.208
+
