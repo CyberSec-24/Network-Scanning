@@ -1,0 +1,11 @@
+Attackers can employ various tools to acquire the OS details of the target.​
+
+Nmap is one of the effective tools for performing OS discovery activities​
+
+In Zenmap, the -O option is used to perform OS discovery, which displays the OS details of the target machine​
+
+Syntax:- nmap –O <ip address>​
+
+Command:- nmap -O  -v 192.168.187.208​
+
+​
