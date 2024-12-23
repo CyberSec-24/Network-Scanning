@@ -1,0 +1,4 @@
+When you send a packet to a closed UDP port, most of the hosts send an ICMP_PORT_UNREACH error.
+Thus, you can determine whether a port is open if UDP packets or ICMP errors are not guaranteed to arrive. 
+Thus, UDP scanners of this type must implement retransmission of packets that appear lost.
+A remote host will require access to the raw ICMP socket to distinguish closed ports from unreachable ports
