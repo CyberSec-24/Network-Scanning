@@ -1,0 +1,12 @@
+The stealth scan involves resetting the TCP connection between the client and the server abruptly before completion of the three-way handshake signals, hence making the connection half-open​
+
+The half-open scan partially opens a connection but stops halfway through. The stealth scan is also called a “SYN scan,” because it only sends the SYN packet​
+
+In the last stage, it examines the packets entering the interface and terminates the connection before triggering a new initialization to identify remote ports​
+
+The client sends a single SYN packet to the server on the appropriate port. If the port is open, the server subsequently responds with a SYN/ACK packet​
+
+In Zenmap, the -sS option is used to perform a stealth scan/TCP half-open scan​
+
+Syntax:- nmap -sS -v <ip address>
+Command:-nmap -sS -v 192.128.187.208
