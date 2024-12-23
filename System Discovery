@@ -1,0 +1,11 @@
+Every port is assigned a specific service, and every service has its own version. Some versions of the protocols are insecure, and they can allow attackers to compromise the machine by exploiting this vulnerability.​
+
+By obtaining accurate service version numbers, an attacker can determine which exploits the target system is vulnerable to​
+
+The probes from the Nmap service-probes database are used for querying various services and matching expressions for recognizing and parsing responses.​
+
+Zenmap, the -sV option is used to detect service versions​
+
+Syntax:- nmap –sV <ip address>​
+
+Command:-nmap -sV  192.168.187.208​
