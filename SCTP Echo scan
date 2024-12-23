@@ -1,0 +1,7 @@
+SCTP COOKIE ECHO scan is a more advanced type of scan. In this type of scan, attackers send the COOKIE ECHO chunk to the target, and if the target port is open,
+it will silently drop the packets onto the port and you will not receive any response from the target
+The COOKIE ECHO chunk is not blocked by non-stateful firewall rule sets as in the INIT scan.
+Only an advanced IDS can detect the SCTP COOKIE ECHO scan. In Zenmap, the -sZ option is used to perform the SCTP COOKIE ECHO scan.
+
+Syntax:- nmap -sZ -v <ip address>
+Command:- nmap -sZ -v 10.10.1.11
