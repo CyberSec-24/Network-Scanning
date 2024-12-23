@@ -1,0 +1,11 @@
+In a list scan, the discovery of the active network host is indirect. ​
+
+A list scan simply generates and prints a list of IPs/Names without actually pinging or scanning the hosts​
+
+As a result, the list scan shows all IP addresses as “not scanned” (0 hosts up)​
+
+Zenmap, the -sL option is used to perform a list scan​
+
+Syntax:- nmap –sL –v <ip address>​
+
+Command:-nmap -sL -v 192.168.187.208​
