@@ -1,0 +1,11 @@
+The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewalls​
+
+This technique makes it difficult for the IDS/firewall to determine which IP address is actually scanning the network and which IP addresses are decoys​
+
+This technique generates multiple IP addresses to perform a scan, thus making it difficult for the target security mechanisms such as IDS, firewalls, etc., to identify the original source from the registered logs​
+
+The target IDS might report scanning from 5–0 IP addresses; however, it cannot differentiate between the actual scanning IP address and the innocuous decoy​
+
+Syntax:- nmap –D RND: <ip address>​
+
+Command:- nmap -D RND: 10.10.1.11​
