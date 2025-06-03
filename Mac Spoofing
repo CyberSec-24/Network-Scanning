@@ -1,0 +1,12 @@
+-> Network firewalls filter packets based on the source media access control (MAC) address.
+
+->  They examine the MAC address in the packet header and determine whether the packets originate from a legitimate source.
+
+-> To avoid these restrictions, attackers use MAC spoofing techniques, in which they employ fake MAC addresses and masquerade as legitimate users to scan the hosts located behind the firewall
+
+-> The MAC address spoofing technique allows attackers to send request packets to the target machine/network, pretending to be a legitimate host
+
+-> Syntax:-  nmap -sT -Pn --spoof-mac 0 <Ip address>
+-> Example:-  nmap -sT -Pn --spoof-mac 0 10.10.1.11
+
+-> command automatically generates a random MAC address and attaches it to the packets in place of the original MAC address while performing host scanning
