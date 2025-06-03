@@ -1,0 +1,12 @@
+-> IPv6 increases the size of the IP address space from 32 bits to 128 bits to support higher levels of the addressing hierarchy
+
+->  Traditional network scanning techniques are computationally less feasible because of the larger search space (64 bits of host address space, or 264 addresses) provided by IPv6 in a subnet.
+
+-> if an attacker can compromise one subnet host, he/she can probe the "all hosts" link local multicast address if the hosts numbers are sequential or use any regular scheme.
+
+->  An attacker needs to analyze 264 addresses to verify if a particular open service is running on a host in that subnet.
+
+-> Using this scan user came to know which ports are open for the target domain 
+
+-> Syntax:- nmap -6 <domain name>
+-> Example:- nmap -6 scanme.nmap.org
