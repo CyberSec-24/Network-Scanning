@@ -1,0 +1,12 @@
+-> In this scanning technique, you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the window field value of the received RST packets
+
+-> The user can use this scanning technique when all the ports return the same TTL value.
+
+-> hence, you cannot perform TTL-based ACK flag probe scanning to find the open ports. Therefore, when you observe the window value, the third packet has a non-zero window value, which means that the port is open
+
+-> The ACK flag probe scanning technique also helps in checking the filtering systems of target networks
+
+-> Sending an ACK probe packet with a random sequence number and getting no response from the target means that the port is filtered an RST response from the target means that the port is not filtered.
+
+->  Syntax:- nmap -sA -v <Ip address>
+-> Example:- nmap -sA -v 10.10.1.10
