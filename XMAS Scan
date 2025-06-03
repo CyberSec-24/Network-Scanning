@@ -1,0 +1,12 @@
+-> Xmas scan is a type of inverse TCP scanning technique with the FIN, URG, and PUSH flags set to send a TCP frame to a remote device.
+
+->  If the target has opened the port, then you will receive no response from the remote system.
+
+-> If the target has closed the port, then you will receive a remote system reply with an RST. 
+
+-> You can use this port scanning technique to scan large networks and find which host is up and what services it is offering. 
+
+-> the flags are often set in the nonsense pattern URG-PSH-FIN. Attackers use the TCP Xmas scan to determine if ports are closed on the target machine via the RST packet.
+
+-> Syntax:- nmap -sX -v <ip address>
+-> Example nmap -sX -v 10.10.1.11
