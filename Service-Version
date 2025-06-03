@@ -1,0 +1,10 @@
+->  Service version detection helps attackers to obtain information about running services and their versions on a target system
+
+-> Obtaining an accurate service version number allows attackers to determine the vulnerability of target system to particular exploits
+
+-> Every port is assigned a specific service, and every service has its own version. Some versions of the protocols are insecure, that can allow attackers to compromise the machine by exploiting this vulnerability
+
+-> Service version detection helps attackers to obtain information about the running services and their versions on a target system.
+
+-> Syntax:- nmap -sV <Ip address>
+-> Example:-  nmap -sV  10.10.1.11
