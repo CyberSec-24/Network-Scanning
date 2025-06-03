@@ -1,0 +1,14 @@
+-> Source port manipulation is a technique used for bypassing the IDS/firewall
+
+->  the actual port numbers are manipulated with common port numbers for evading certain IDS and firewall rules.
+
+-> The administrator mostly configures the firewall by allowing the incoming traffic from well-known ports such as HTTP, DNS, FTP, etc. 
+
+-> The firewall can simply allow the incoming traffic from the packets sent by the attackers using such common ports.
+
+-> The firewalls can be made secure using application-level proxies or protocol-parsing firewall elements, this technique helps the attacker to bypass the firewall rules easily.
+
+->  The attacker tries to manipulate the original port number with the common port numbers, which can easily bypass the IDS/firewall.
+
+-> Syntax:- nmap -g <port number> <Ip Address>
+-> Example:- nmap -g 80 10.10.1.11
