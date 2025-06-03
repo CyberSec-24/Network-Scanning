@@ -1,0 +1,8 @@
+-> The attacker scans the number of hosts in the target network in a random order to scan the intended target that is lying beyond the firewall.
+
+-> This technique instructs Nmap to shuffle each group of 16384 hosts before scanning with slow timing options, thus making the scan less notable to network monitoring systems and firewalls.
+
+-> if larger group sizes are randomized, the PING_GROUP_SZ should be increased in nmap.h and it should be compiled again
+
+-> syntax:- nmap --randomize-hosts <Ip address>
+-> Example:- nmap --randomize-hosts 10.10.1.11
